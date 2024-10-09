@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>eLEARNING - eLearning HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Navbar Start -->
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0"
+    >
+      <a
+        href="index.html"
+        class="navbar-brand d-flex align-items-center px-4 px-lg-5"
+      >
+        <h2 class="m-0 text-primary">
+          <i class="fa fa-book me-3"></i>eLEARNING
+        </h2>
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler me-4"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+          <a href="index.html" class="nav-item nav-link">Home</a>
+          <a href="about.html" class="nav-item nav-link">About</a>
+          <a href="courses.html" class="nav-item nav-link active">Courses</a>
+          <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+        <a href="#" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block"
+          >Join Now<i class="fa fa-arrow-right ms-3"></i
+        ></a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center">
+            <h1 class="display-3 text-white animated slideInDown">Courses</h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb justify-content-center">
+                <li class="breadcrumb-item">
+                  <a class="text-white" href="#">Home</a>
+                </li>
+                <li
+                  class="breadcrumb-item text-white active"
+                  aria-current="page"
+                >
+                  Courses
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Filter & Courses Section -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Filter Section -->
+          <div class="col-lg-3 mb-4">
+            <div class="bg-light p-4 rounded">
+              <h5 class="mb-4">Filter Courses</h5>
+
+              <!-- Department Filter -->
+              <div class="mb-3">
+                <label class="form-label">Department</label>
+                <select class="form-select" id="departmentFilter">
+                  <option value="all">All Departments</option>
+                  <option value="Computer Science">Computer Science</option>
+                  <option value="Biotechnology">Biotechnology</option>
+                  <option value="Electronics">Electronics</option>
+                  <option value="Management">Management</option>
+                </select>
+              </div>
+
+              <!-- Semester Filter -->
+              <div class="mb-3">
+                <label class="form-label">Semester</label>
+                <div>
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="semester-checkbox"
+                      value="sem-1"
+                    />
+                    Sem-1</label
+                  ><br />
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="semester-checkbox"
+                      value="sem-2"
+                    />
+                    Sem-2</label
+                  ><br />
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="semester-checkbox"
+                      value="sem-3"
+                    />
+                    Sem-3</label
+                  ><br />
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="semester-checkbox"
+                      value="sem-4"
+                    />
+                    Sem-4</label
+                  ><br />
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="semester-checkbox"
+                      value="sem-5"
+                    />
+                    Sem-5</label
+                  ><br />
+                  <label
+                    ><input
+                      type="checkbox"
+                      class="semester-checkbox"
+                      value="sem-6"
+                    />
+                    Sem-6</label
+                  >
+                </div>
+              </div>
+
+              <!-- Course Name Search -->
+              <div class="mb-3">
+                <label class="form-label">Course Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="courseNameSearch"
+                  placeholder="Search by course name"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Courses Section -->
+          <div class="col-lg-9">
+            <div class="row" id="coursesList">
+              <!-- Course Item Example -->
+              <div
+                class="col-md-6 col-lg-4 mb-4 course-item"
+                data-department="Computer Science"
+                data-semesters="sem-1 sem-2"
+                data-name="Web Development Basics"
+              >
+                <div class="course-item bg-light p-4 rounded">
+                  <img
+                    src="img/course-1.jpg"
+                    class="img-fluid mb-3"
+                    alt="Course Image"
+                  />
+                  <h5 class="mb-2">Web Development Basics</h5>
+                  <p class="mb-2">Department: Computer Science</p>
+                  <p class="mb-2">Semesters: 1, 2</p>
+                  <button class="btn btn-primary w-100">Enroll Now</button>
+                </div>
+              </div>
+              <!-- Add more course items with relevant data attributes -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <p class="mb-0 text-center">© 2024 eLEARNING. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Default filter is 'all'
+      filterSelection("all");
+
+      function filterSelection(c) {
+        var x, i;
+        // Get all the course elements
+        x = document.getElementsByClassName("course-box");
+
+        // If 'all' is selected, show everything
+        if (c == "all") c = "";
+
+        // Loop through all course elements
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          // If the course's class name matches the filter, show it
+          if (x[i].className.indexOf(c) > -1) {
+            w3AddClass(x[i], "show");
+          }
+        }
+      }
+
+      // Add 'show' class to display an element
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
+        }
+      }
+
+      // Remove 'show' class to hide an element
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+
+      // Add active class to the current button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+  </body>
+</html>
